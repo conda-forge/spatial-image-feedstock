@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spatial_image-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatial_image-{{ version }}.tar.gz
   sha256: e7fb185644093e96cac510c4184f2777b965b5a7ca25688f379e9acb48e3e07d
 
 build:
@@ -18,10 +18,10 @@ requirements:
   host:
     - flit-core
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - numpy
-    - python >=3.8
+    - python >={{ python_min }}
     - xarray
     - xarray-dataclasses >=1.1.0
 
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/spatial-image/

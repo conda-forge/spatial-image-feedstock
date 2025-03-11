@@ -23,7 +23,7 @@ requirements:
     - numpy
     - python >={{ python_min }}
     - xarray
-    - xarray-dataclasses >=1.1.0
+    - xarray-dataclasses >=1.9.1
 
 test:
   imports:

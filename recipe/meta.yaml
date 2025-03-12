@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - numpy
     - python >={{ python_min }}
     - xarray
-    - xarray-dataclasses >=1.1.0
+    - xarray-dataclasses >=1.9.1
 
 test:
   imports:

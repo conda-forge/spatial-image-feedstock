@@ -1,5 +1,5 @@
 {% set name = "spatial-image" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatial_image-{{ version }}.tar.gz
-  sha256: e7fb185644093e96cac510c4184f2777b965b5a7ca25688f379e9acb48e3e07d
+  sha256: c5da1efbc19a277808aea11f23c3ba61073dccdf17da86981a3faa60b3795a2a
 
 build:
   noarch: python

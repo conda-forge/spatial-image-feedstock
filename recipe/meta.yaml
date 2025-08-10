@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatial_image-{{ version }}.tar.gz
-  sha256: b0bb8ed84c9c11de00b3bbed7041375048327e0ffcb233f61aca7a24dcd75537
+  sha256: ec6c043bf985411f882b9be6c6f061c8b0bc8723a9899e76e149def2035471dd
 
 build:
   noarch: python

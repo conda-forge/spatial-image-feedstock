@@ -19,6 +19,7 @@ requirements:
     - flit-core
     - pip
     - python {{ python_min }}
+    - hatchling
   run:
     - numpy
     - python >={{ python_min }}

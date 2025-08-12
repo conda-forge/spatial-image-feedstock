@@ -1,5 +1,6 @@
 {% set name = "spatial-image" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.3" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatial_image-{{ version }}.tar.gz
-  sha256: e7fb185644093e96cac510c4184f2777b965b5a7ca25688f379e9acb48e3e07d
+  sha256: b0bb8ed84c9c11de00b3bbed7041375048327e0ffcb233f61aca7a24dcd75537
 
 build:
   noarch: python
@@ -19,6 +20,7 @@ requirements:
     - flit-core
     - pip
     - python {{ python_min }}
+    - hatchling
   run:
     - numpy
     - python >={{ python_min }}
